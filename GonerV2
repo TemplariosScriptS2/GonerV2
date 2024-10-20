@@ -1,0 +1,389 @@
+local args = {
+    [1] = "CharacterChange",
+    [2] = {
+        [1] = 18298595398,
+        [2] = 18298595080,
+        [3] = 18298595036,
+        [4] = 18298595410,
+        [5] = 18298595145,
+        [6] = 0
+    },
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args))
+wait(3)
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- ID do emote
+local emoteId = 4686925579
+
+-- Criando a animação para o emote
+local animation = Instance.new("Animation")
+animation.AnimationId = "rbxassetid://"..emoteId
+
+-- Carregando e executando o emote
+local emote = humanoid:LoadAnimation(animation)
+emote:Play()
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- Função para definir a velocidade do personagem
+local function setWalkSpeed(speed)
+    humanoid.WalkSpeed = speed
+end
+
+-- Definindo a velocidade como 0
+setWalkSpeed(0)
+wait(2)
+-- Executa as funções que você forneceu
+local function executeFunctions()
+    local args = {
+        [1] = "wear",
+        [2] = 17771175724
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+    wait(1)
+    
+    args = {
+        [1] = "wear",
+        [2] = 17772174303
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+    wait(1)
+
+    args = {
+        [1] = "wear",
+        [2] = 17770317484
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+    wait(1)
+
+    args = {
+        [1] = "wear",
+        [2] = 4586060885
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+    wait(1)
+
+    args = {
+        [1] = "wear",
+        [2] = 6913613757
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+    wait(1)
+
+    args = {
+        [1] = "skintone",
+        [2] = "Really black"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Updat1eAvata1r"):FireServer(unpack(args))
+    wait(0.1)
+    local args = {
+    [1] = "RequestingEmmitersName",
+    [2] = "087SmokeBlack"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args))
+     wait(0.1)
+
+    -- Executa o script extra
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TemplariosScriptS2/GonerR6/refs/heads/main/GonerR6"))()
+    wait(0.1)
+    local args = {
+    [1] = "CharacterSizeDown",
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+   wait(0.1)
+   local args = {
+    [1] = "SkateBoard"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+   wait(0.1)
+local args = {
+    [1] = "CharacterSizeUp",
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clothe1s"):FireServer(unpack(args))
+   wait(0.1)
+   local args = {
+    [1] = "PickingScooterMusicText",
+    [2] = "9039981149"
+}
+
+game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+   wait(0.1)
+   local player = game.Players.LocalPlayer
+local backpack = player:WaitForChild("Backpack")
+
+-- Criar a tool
+local tool = Instance.new("Tool")
+tool.Name = "Levantar Mão"
+tool.RequiresHandle = true
+
+-- Criar o handle invisível
+local handle = Instance.new("Part")
+handle.Name = "Handle"
+handle.Size = Vector3.new(1, 1, 1)  -- Tamanho do handle
+handle.Transparency = 1  -- Torna o handle invisível
+handle.CanCollide = false  -- O handle não colide com outros objetos
+handle.Anchored = false
+handle.Parent = tool
+
+-- Colocar a tool na backpack do jogador
+tool.Parent = backpack
+end
+wait(0.1)
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+
+-- Cria a Tool
+local tool = Instance.new("Tool")
+tool.Name = "Som 1"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+-- Função ao equipar a Tool
+tool.Equipped:Connect(function()
+    local id = 2291326370 -- Substitua pelo ID que você deseja usar
+    local args = {
+        [1] = "PickingScooterMusicText",
+        [2] = id
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Função ao desequipar a Tool
+tool.Unequipped:Connect(function()
+    local args = {
+        [1] = "PickingScooterMusicStop"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+wait(0.1)
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+
+-- Cria a Tool
+local tool = Instance.new("Tool")
+tool.Name = "Som 2"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+-- Função ao equipar a Tool
+tool.Equipped:Connect(function()
+    local id = 2316600989 -- Substitua pelo ID que você deseja usar
+    local args = {
+        [1] = "PickingScooterMusicText",
+        [2] = id
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Função ao desequipar a Tool
+tool.Unequipped:Connect(function()
+    local args = {
+        [1] = "PickingScooterMusicStop"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+wait(0.1)
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+
+-- Cria a Tool
+local tool = Instance.new("Tool")
+tool.Name = "Som 3"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+-- Função ao equipar a Tool
+tool.Equipped:Connect(function()
+    local id = 2316601464 -- Substitua pelo ID que você deseja usar
+    local args = {
+        [1] = "PickingScooterMusicText",
+        [2] = id
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Função ao desequipar a Tool
+tool.Unequipped:Connect(function()
+    local args = {
+        [1] = "PickingScooterMusicStop"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+wait(0.1)
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+
+-- Cria a Tool
+local tool = Instance.new("Tool")
+tool.Name = "Som 4"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+-- Função ao equipar a Tool
+tool.Equipped:Connect(function()
+    local id = 2291325961 -- Substitua pelo ID que você deseja usar
+    local args = {
+        [1] = "PickingScooterMusicText",
+        [2] = id
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Função ao desequipar a Tool
+tool.Unequipped:Connect(function()
+    local args = {
+        [1] = "PickingScooterMusicStop"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+wait(0.1)
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+
+-- Cria a Tool
+local tool = Instance.new("Tool")
+tool.Name = "Som 5"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+-- Função ao equipar a Tool
+tool.Equipped:Connect(function()
+    local id = 2290634374 -- Substitua pelo ID que você deseja usar
+    local args = {
+        [1] = "PickingScooterMusicText",
+        [2] = id
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Função ao desequipar a Tool
+tool.Unequipped:Connect(function()
+    local args = {
+        [1] = "PickingScooterMusicStop"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+wait(0.1)
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+
+-- Cria a Tool
+local tool = Instance.new("Tool")
+tool.Name = "Som 6"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+-- Função ao equipar a Tool
+tool.Equipped:Connect(function()
+    local id = 2737898305 -- Substitua pelo ID que você deseja usar
+    local args = {
+        [1] = "PickingScooterMusicText",
+        [2] = id
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Função ao desequipar a Tool
+tool.Unequipped:Connect(function()
+    local args = {
+        [1] = "PickingScooterMusicStop"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+wait(0.1)
+local player = game.Players.LocalPlayer
+local backpack = player.Backpack
+
+-- Cria a Tool
+local tool = Instance.new("Tool")
+tool.Name = "Som 7"
+tool.RequiresHandle = false
+tool.Parent = backpack
+
+-- Função ao equipar a Tool
+tool.Equipped:Connect(function()
+    local id = 2291326656 -- Substitua pelo ID que você deseja usar
+    local args = {
+        [1] = "PickingScooterMusicText",
+        [2] = id
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Função ao desequipar a Tool
+tool.Unequipped:Connect(function()
+    local args = {
+        [1] = "PickingScooterMusicStop"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1NoMoto1rVehicle1s"):FireServer(unpack(args))
+end)
+
+-- Executa as funções e depois começa a subir
+executeFunctions()
+
+-- Espera até todas as funções serem executadas
+wait(1)
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- Função para parar todos os emotes ou animações em execução
+local function stopAllEmotes()
+    for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+        track:Stop()
+    end
+end
+
+-- Chama a função para parar todos os emotes
+stopAllEmotes()
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+-- Função para definir a velocidade do personagem
+local function setWalkSpeed(speed)
+    humanoid.WalkSpeed = speed
+end
+
+-- Definindo a velocidade como 0
+setWalkSpeed(16)
+wait(0.1)
+local player = game.Players.LocalPlayer
+
+-- Função a ser executada após o renascimento do personagem
+local function onCharacterAdded(character)
+    -- Espera o personagem ter o Humanoid
+    local humanoid = character:WaitForChild("Humanoid")
+
+    -- Executa as funções após o renascimento
+
+    -- Função 1
+    local args1 = {
+        [1] = "OCA"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Avata1rOrigina1l"):FireServer(unpack(args1))
+
+    -- Função 2
+    local args2 = {
+        [1] = "RequestingEmmitersName",
+        [2] = "0001Remove"
+    }
+    game:GetService("ReplicatedStorage").RE:FindFirstChild("1Clea1rTool1s"):FireServer(unpack(args2))
+end
+
+-- Conecta o evento CharacterAdded ao jogador
+player.CharacterAdded:Connect(onCharacterAdded)
